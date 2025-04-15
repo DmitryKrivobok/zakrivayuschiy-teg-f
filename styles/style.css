@@ -238,6 +238,7 @@ dialog {
   min-width: 353px;
   min-height: 191px;
   padding: 30px;
+  
 }
 
 dialog[open] .dialog-container {
