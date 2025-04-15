@@ -540,23 +540,18 @@
       </article>
     </main>
 
-    <footer class="footer">
-      <button
-        class="footer__button"
-        type="button"
-        onclick="window['dialog-id'].showModal()"
-        aria-controls="dialog-id"
-      >
-        <svg
-          class="icon"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 39 39"
-        >
-          <use href="./svg/save-icon.svg#save-icon"></use>
-        </svg>
-        <span class="button__text">Cохранить на память</span>
-      </button>
-    </footer>
+    <button
+      class="button button_type_save"
+      type="button"
+      onclick="window['dialog-id'].showModal()"
+      aria-controls="dialog-id"
+    >
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39">
+        <use href="./svg/save-icon.svg#save-icon"></use>
+      </svg>
+      <span class="button__text">Cохранить на память</span>
+    </button>
+
     <dialog id="dialog-id">
       <div class="dialog-container">
         <svg
