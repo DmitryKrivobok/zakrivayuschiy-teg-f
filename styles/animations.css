@@ -10,13 +10,13 @@
 
 */
 .card__like-button:focus,
-.footer__button:focus {
+.button_type_save:focus {
   box-shadow: 2px 2px 0 0 var(--color-basic);
   outline: none;
 }
 
 .card__like-button::after,
-.footer__button::after {
+.button_type_save::after {
   content: "";
   position: absolute;
   top: 0;
@@ -30,13 +30,13 @@
 }
 
 .card__like-button:hover::after,
-.footer__button:hover::after {
+.button_type_save:hover::after {
   transform: scaleX(1);
 }
 
 .card__like-button:hover .button__text,
-.footer__button:hover .button__text,
-.footer__button:hover .icon {
+.button_type_save:hover .button__text,
+.button_type_save:hover .icon {
   mix-blend-mode: difference;
   color: var(--color-accent);
 }
