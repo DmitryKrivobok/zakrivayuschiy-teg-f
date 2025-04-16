@@ -78,7 +78,8 @@
 }
 
 .card__title {
-  padding: 9px 24px 7px 10px;
+  display: flex;
+  padding: 5px 24px 7px 10px;
   overflow-wrap: break-word;
   border-bottom: 1px solid var(--color-basic);
   font-weight: var(--font-weight-title);
@@ -86,11 +87,12 @@
   font-size: var(--font-size-basic);
   line-height: 100%;
   font-family: var(--basic-font);
+  align-items: center;
 }
 
 .card__container {
   display: grid;
-  padding: 24px 27px 25px 25px;
+  padding: 25px 27px 24px 25px;
   width: var(--width-desktop);
   border-top: 1px solid var(--color-basic);
 }
@@ -174,18 +176,11 @@
 .text-container {
   display: grid;
   gap: 27px;
-  font-size: var(--font-size-basic);
+  font-size: 19px;
   margin-bottom: 25px;
   line-height: 21px;
   font-weight: var(--font-weight-basic);
   font-variation-settings: "wght" var(--font-weight-basic, 400);
-}
-.card__text {
-  font-size: var(--font-size-basic);
-  line-height: 21px;
-  font-weight: var(--font-weight-basic);
-  font-variation-settings: "wght" var(--font-weight-basic, 400);
-  letter-spacing: 0%;
 }
 
 .card__like-button {
@@ -198,7 +193,7 @@
 .button-container {
   display: flex;
   justify-content: flex-end;
-  gap: 6px;
+  align-items: end;
 }
 
 button {
@@ -287,9 +282,6 @@ dialog::backdrop {
 }
 
 @media (width <=375px) {
-  .page {
-    max-width: 375px;
-  }
   .header {
     width: var(--width-mobile);
   }
@@ -298,7 +290,9 @@ dialog::backdrop {
   }
   .card__post {
     width: var(--width-mobile);
-    min-inline-size: 375px;
+  }
+  .text-container {
+    font-size: var(--font-size-basic);
   }
   .button_type_save {
     display: grid;
