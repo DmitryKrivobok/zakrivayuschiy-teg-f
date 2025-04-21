@@ -30,7 +30,7 @@
   justify-content: center;
   width: var(--width-desktop);
   font-family: var(--accent-font, monospace);
-  border: 2px solid var(--color-basic), rgba(0, 0, 0, 1);
+  border: 2px solid var(--color-basic, rgba(0, 0, 0, 1));
   margin-bottom: 100px;
   margin-top: 100px;
   padding: var(--padding-header);
@@ -141,8 +141,10 @@
   font-variation-settings: "wght" var(--font-weight-basic, 400);
   text-transform: uppercase;
   opacity: 50%;
-  text-shadow: -1px -1px var(--color-accent, rgba(255, 255, 255, 1)), 1px -1px var(--color-accent, rgba(255, 255, 255, 1)),
-    -1px 1px var(--color-accent), 1px 1px var(--color-accent, rgba(255, 255, 255, 1));
+  text-shadow: -1px -1px var(--color-accent, rgba(255, 255, 255, 1)),
+    1px -1px var(--color-accent, rgba(255, 255, 255, 1)),
+    -1px 1px var(--color-accent),
+    1px 1px var(--color-accent, rgba(255, 255, 255, 1));
 }
 
 @supports (-webkit-text-stroke: var(--color-accent)) {
@@ -171,7 +173,7 @@
   gap: 6px;
 }
 
-button {
+.button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -205,7 +207,7 @@ button {
   mix-blend-mode: difference;
 }
 
-.dialog__ok-button,
+.dialog-close-button,
 .card__like-button {
   padding: 9px 17px;
   min-block-size: 38px;
@@ -253,7 +255,7 @@ button {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
-.dialog__ok-button {
+.dialog-close-button {
   text-transform: uppercase;
   width: 100%;
 }
@@ -262,9 +264,7 @@ button {
   block-size: 55px;
   padding: 15px 18px 15px 19px;
   gap: 8px;
-  margin-top: 50px;
   mix-blend-mode: difference;
-  color: var(--color-accent, rgba(255, 255, 255, 1));
 }
 
 @media (width <=375px) {
@@ -291,6 +291,7 @@ button {
     block-size: 84px;
     padding: 15px 20.5px 15px 19.5px;
     margin-bottom: 100px;
+    margin-top: 2px;
   }
   .dialog__window {
     inline-size: 341px;
