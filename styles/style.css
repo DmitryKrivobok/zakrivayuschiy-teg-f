@@ -22,6 +22,7 @@
   background-attachment: fixed;
   justify-content: center;
   place-items: center;
+  margin-bottom: 103px;
 }
 
 .header {
@@ -68,7 +69,7 @@
 }
 
 .card__title {
-  padding: 9px 0px 7px 10px;
+  padding: 9px 10px 7px 10px;
   overflow-wrap: break-word;
   border-bottom: 1px solid var(--color-basic, rgba(0, 0, 0, 1));
   font-weight: var(--font-weight-title);
@@ -189,9 +190,11 @@
 }
 
 .card__icon-button {
-  border-color: transparent;
   transition: border-color 0.3s ease;
   padding: 0;
+  background: transparent;
+  border: 2px solid transparent;
+  height: 38px;
 }
 
 .card__like-button {
@@ -264,10 +267,12 @@
   block-size: 55px;
   padding: 15px 18px 15px 19px;
   gap: 8px;
-  mix-blend-mode: difference;
 }
 
 @media (width <=375px) {
+  .page {
+    margin-bottom: 100px;
+  }
   .header {
     width: var(--width-mobile);
   }
@@ -290,7 +295,6 @@
     flex-direction: column;
     block-size: 84px;
     padding: 15px 20.5px 15px 19.5px;
-    margin-bottom: 100px;
     margin-top: 2px;
   }
   .dialog__window {

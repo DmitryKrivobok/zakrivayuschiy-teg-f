@@ -13,7 +13,8 @@
   outline: none;
 }
 
-.button:focus-visible {
+.button_type_save:focus-visible,
+.card__like-button:focus-visible {
   box-shadow: 2px 2px 0 0 var(--color-basic, rgba(0, 0, 0, 1));
 }
 
